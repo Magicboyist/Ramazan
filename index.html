@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İftar Sayacı - Ramazan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="ramadan-icon"><i class="fas fa-moon"></i></div>
+            <h1>İftar Sayacı</h1>
+        </div>
+        
+        <div class="location-selector">
+            <label for="city-select">Şehir Seçiniz:</label>
+            <select id="city-select">
+                <option value="">Şehir Seçin</option>
+                <!-- Cities will be populated by JavaScript -->
+            </select>
+        </div>
+        
+        <div class="prayer-times">
+            <div class="iftar-time-display">
+                <div class="time-label">İftar Vakti</div>
+                <div class="time-value" id="iftar-time">--:--</div>
+            </div>
+        </div>
+        
+        <div class="countdown-container">
+            <h2>İftara Kalan Süre</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="hours">--</div>
+                    <div class="countdown-label">Saat</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="minutes">--</div>
+                    <div class="countdown-label">Dakika</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="seconds">--</div>
+                    <div class="countdown-label">Saniye</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="daily-content">
+            <div class="daily-content-slider">
+                <div class="daily-item hadith">
+                    <h3>Günün Hadisi</h3>
+                    <p>"Kim Allah'a ve ahiret gününe inanıyorsa, misafirine ikram etsin." (Buhari)</p>
+                </div>
+                <div class="daily-item surah">
+                    <h3>Günün Suresi</h3>
+                    <p>Rahman Suresi: "O halde, Rabbinizin hangi nimetlerini yalanlıyorsunuz?"</p>
+                </div>
+                <div class="daily-item dua">
+                    <h3>Günün Duası</h3>
+                    <p>"Allah'ım! Senden hidayet, takva, iffet ve gönül zenginliği istiyorum."</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="islamic-pattern"></div>
+            <p>Hayırlı Ramazanlar</p>
+            <p>© 2025 Tekno Ömer</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
